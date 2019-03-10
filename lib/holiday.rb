@@ -21,7 +21,7 @@ holiday_hash
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-holiday_hash[:winter].each do |holiday, supplies|
+holiday_hash[:winter].map do |holiday, supplies|
   supplies.flatten
   end
 end
